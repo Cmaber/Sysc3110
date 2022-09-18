@@ -3,9 +3,8 @@ import java.util.ArrayList;
 public class AddressBook {
     ArrayList<BuddyInfo> arr;
 
-    public static void main(String[] args) {
-        ArrayList<BuddyInfo> arr = new ArrayList<BuddyInfo>();
-        System.out.println("AddressBook");
+    public AddressBook() {
+        arr = new ArrayList<BuddyInfo>();
     }
 
     public void addBuddy(BuddyInfo a) {
@@ -14,5 +13,13 @@ public class AddressBook {
     }
     public void removeBuddy(BuddyInfo c) {
         arr.remove(c);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("AddressBook");
+        BuddyInfo buddy = new BuddyInfo("chris");
+        AddressBook book = new AddressBook();
+        book.addBuddy(buddy);
+        book.removeBuddy(buddy);
     }
 }
