@@ -8,6 +8,11 @@ public class AddressBook {
         arr = new ArrayList<BuddyInfo>();
     }
 
+    public void dothis()
+    {
+        System.out.println("hello");
+    }
+
     public void addBuddy(BuddyInfo a) {
 
         arr.add(a);
